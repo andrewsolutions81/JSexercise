@@ -18,7 +18,7 @@ console.log(solution(str));
 function solution(str) {
   // function called solution with one parameter called str
   return str
-    .split("") // makes the string an array "" empty is one charactre ->[ 'w', 'o', 'r', 'l', 'd' ]
+    .split("") // makes the string an array "" empty is one charactre ->[ 'w', 'o', 'r', 'l', 'd' ] you could also use [...str] spread operator
     .reverse() // reverse the array  -> [ 'd', 'l', 'r', 'o', 'w' ]
     .join(""); // The join() method creates and returns a new string by concatenating all of the elements in an array-> dlrow
 }

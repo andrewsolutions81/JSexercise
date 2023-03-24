@@ -8,7 +8,7 @@ let arr = ["a", "a", "b", 1, 1, 2, true, true, false];
 const arrayFreq = (arr) => {
   let obj = {};
   for (let i = 0; i < arr.length; i++) {
-    element = arr[i];
+    let element = arr[i];
     if (obj[element]) {
       obj[element]++;
     } else {

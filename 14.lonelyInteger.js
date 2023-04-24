@@ -38,7 +38,6 @@ function lonelyinteger(a) {
       freq[element] = 1
     }
   }
-
     // Find the element with the lowest frequency by initializing a variable with a large value
     let lowestFrequency = Infinity;
     let lowestElement = null;

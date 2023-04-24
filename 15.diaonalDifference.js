@@ -58,8 +58,24 @@ Difference: |4 - 19| = 15
 
 Note: |x| is the absolute value of x */
 
-function diagonalDifference(arr) {
-  // Write your code here
+let arr = [
+  [11, 2, 4],
+  [4, 5, 6],
+  [10, 8, -12],
+]; // 15
 
+function diagonalDifference(arr) {
+  const n = arr.length; // Get the number of rows in the matrix
+  let leftDiagSum = 0; // Initialize the sum of the left diagonal elements to 0
+  let rightDiagSum = 0; // Initialize the sum of the right diagonal elements to 0
+
+  // Iterate over each row and column of the matrix
+  for (let i = 0; i < n; i++) {
+      leftDiagSum += arr[i][i]; // Add the current element of the left diagonal to the sum
+      rightDiagSum += arr[i][n - i - 1]; // Add the current element of the right diagonal to the sum
+  }
+
+  return Math.abs(leftDiagSum - rightDiagSum); // Return the absolute difference between the two diagonal sums
 }
 
+console.log(diagonalDifference(arr))

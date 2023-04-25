@@ -3,7 +3,7 @@
 Make a function that receives an array of elements,
 returns a object with  elements asa keys and frequency as values. */
 
-let arr = ["a", "a", "b", 1, 1, 2, true, true, false];
+let arr = ["a", "a", "b", 1, 1, 2, true, true, false];//{ '1': 2, '2': 1, a: 2, b: 1, true: 2, false: 1 }
 
 const arrayFreq = (arr) => {
   let obj = {};
